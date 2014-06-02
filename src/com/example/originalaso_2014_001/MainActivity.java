@@ -44,7 +44,7 @@ View.OnClickListener
 		switch(v.getId()){
 			case R.id.btnGO:
 			//名前読み込み
-			EditText editxt = (EditText)findViewById(R.id.Name);
+			EditText editxt = (EditText)findViewById(R.id.NAME);
 			String inputMsg = editxt.getText().toString();
 			//ランダム値生成
 			Random rnd = new Random();
@@ -55,27 +55,25 @@ View.OnClickListener
 				case 0:
 				//大吉に移動！！
 				intent = new Intent(MainActivity.this,Mikuji_01.class);
-				startActivity(intent);
 				break;
 
 				//中吉に移動
 				case 1:
 				intent = new Intent(MainActivity.this,mikuji02.class);
-				startActivity(intent);
 				break;
 
 				//小吉に移動…
 				case 2:
 				intent = new Intent(MainActivity.this,mikuji03.class);
-				startActivity(intent);
 				break;
 
 				//大凶に移動…orz
 				case 3:
 				intent= new Intent(MainActivity.this,mikuji04.class);
-				startActivity(intent);
 				break;
 			}
+			intent.putExtra("name",inputMsg );
+			startActivity(intent);
 		}
 	}
 

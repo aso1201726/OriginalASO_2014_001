@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.originalaso_2014_001.MainActivity"
-    tools:ignore="MergeRootFrame" 
+    tools:ignore="MergeRootFrame"
     android:layout_marginTop="20sp">
 
     <TextView
@@ -37,26 +37,27 @@
         android:orientation="horizontal" >
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/t_View1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="名前" 
+            android:text="名前"
             android:textSize="20sp"
             android:layout_marginLeft="10sp"/>
 
         <EditText
-            android:id="@+id/Name"
+            android:id="@+id/NAME"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="9" 
-            android:layout_marginLeft="10sp"/>
+            android:layout_marginLeft="10sp"
+            android:ems="6"
+            android:textSize="25sp" />
 
         <Button
             android:id="@+id/btnGO"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:text="送信" />
+			android:text="送信" />
 
     </LinearLayout>
 

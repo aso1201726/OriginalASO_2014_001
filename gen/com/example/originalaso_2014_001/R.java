@@ -35,13 +35,13 @@ public final class R {
         public static final int title=0x7f02000a;
     }
     public static final class id {
-        public static final int Name=0x7f080004;
+        public static final int NAME=0x7f080004;
         public static final int Txt1=0x7f080001;
         public static final int action_settings=0x7f080007;
         public static final int btnGO=0x7f080005;
         public static final int container=0x7f080000;
         public static final int imageView1=0x7f080002;
-        public static final int textView1=0x7f080003;
+        public static final int t_View1=0x7f080003;
         public static final int textView2=0x7f080006;
     }
     public static final class layout {
