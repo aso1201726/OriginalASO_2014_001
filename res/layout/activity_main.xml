@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/LinearLayout1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="38dp"
         android:orientation="vertical" >
 
         <TextView
@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="おみくじ"
-            android:textSize="32sp" />
+            android:textSize="25sp" />
 
         <EditText
             android:id="@+id/Name"
@@ -29,6 +29,13 @@
             <requestFocus />
         </EditText>
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="234dp"
+        android:layout_height="274dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/title" />
 
     <Button
         android:id="@+id/btnGO"
