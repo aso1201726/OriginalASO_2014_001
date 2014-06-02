@@ -5,43 +5,59 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.originalaso_2014_001.MainActivity"
-    tools:ignore="MergeRootFrame" >
+    tools:ignore="MergeRootFrame" 
+    android:layout_marginTop="20sp">
+
+    <TextView
+        android:id="@+id/Txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65sp"
+        android:text="おみくじ"
+        android:textSize="45sp" />
 
     <LinearLayout
-        android:id="@+id/LinearLayout1"
         android:layout_width="match_parent"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical" >
 
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="234dp"
+            android:layout_height="274dp"
+            android:layout_marginLeft="45sp"
+            android:layout_marginTop="10sp"
+            android:scaleType="fitXY"
+            android:src="@drawable/title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
         <TextView
-            android:id="@+id/Txt1"
+            android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="おみくじ"
-            android:textSize="25sp" />
+            android:text="名前" 
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"/>
 
         <EditText
             android:id="@+id/Name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10" >
+            android:ems="9" 
+            android:layout_marginLeft="10sp"/>
 
-            <requestFocus />
-        </EditText>
+        <Button
+            android:id="@+id/btnGO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="送信" />
+
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="234dp"
-        android:layout_height="274dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/title" />
-
-    <Button
-        android:id="@+id/btnGO"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:text="送信" />
 
 </LinearLayout>
