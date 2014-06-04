@@ -48,7 +48,7 @@ View.OnClickListener
 			String inputMsg = editxt.getText().toString();
 			//ランダム値生成
 			Random rnd = new Random();
-			int ran = rnd.nextInt(4);
+			int ran = rnd.nextInt(5);
 			Intent intent = null;
 
 			switch (ran){
@@ -70,6 +70,10 @@ View.OnClickListener
 				//大凶に移動…orz
 				case 3:
 				intent= new Intent(MainActivity.this,mikuji04.class);
+				break;
+				
+				case 4:
+				intent = new Intent(MainActivity.this,mikuji05.class);
 				break;
 			}
 			intent.putExtra("name",inputMsg );
